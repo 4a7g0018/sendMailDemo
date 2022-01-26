@@ -28,4 +28,13 @@ public class UsersService implements UserDetailsService {
             throw new UsernameNotFoundException("Username is wrong.");
         }
     }
+
+    public Users saveUser(Users users){
+        try {
+            return userRepository.save(users);
+        }catch (Exception ex){
+            log.info("create error");
+        }
+        return null;
+    }
 }
