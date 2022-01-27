@@ -10,5 +10,5 @@ import lombok.*;
 public class Email {
     private String recipient;
     private String title;
-    private String getMessage;
+    private String message;
 }
